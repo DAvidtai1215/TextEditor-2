@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#FF96E7D3">
     <Grid Margin="0,0,0,-5">
-        <Button Content="Button" HorizontalAlignment="Left" Height="41" Margin="26,23,0,0" VerticalAlignment="Top" Width="89"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="41" Margin="142,23,0,0" VerticalAlignment="Top" Width="90"/>
-        <ComboBox HorizontalAlignment="Left" Margin="253,33,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Height="41" Margin="26,23,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="41" Margin="142,23,0,0" VerticalAlignment="Top" Width="90"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Margin="253,33,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Margin="378,33,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="26" Margin="496,31,0,0" VerticalAlignment="Top" Width="28" FontWeight="Bold"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="26" Margin="529,31,0,0" VerticalAlignment="Top" Width="28" FontStyle="Italic" FontWeight="Bold"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="26" Margin="562,31,0,0" VerticalAlignment="Top" Width="28" FontWeight="Bold"/>
+        <RichTextBox x:Name="rtbText" Margin="26,84,35,35">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </Window>
